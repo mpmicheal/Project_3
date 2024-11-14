@@ -23,6 +23,27 @@
   }
 }
 
+@media screen and (min-width: 930px) {
+  nav ul {
+    padding: 1rem;
+    font-size: 2.3rem;
+  }
+
+  main {
+    width: 75%;
+    padding: 2rem;
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+ 
+  footer {
+    padding: 2rem;
+  }
+}
+
 #map {
   height: 100%;
   width: 100%;
