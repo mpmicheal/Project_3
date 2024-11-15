@@ -38,3 +38,22 @@
 }
 
 window.initMap = initMap;
+
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlides() {
+  slides.forEach((slide, i) => {
+    slide.style.opacity = "0"; // Hide all slides
+  });
+
+  slideIndex++;
+  if (slideIndex > slides.length) slideIndex = 1;
+  slides[slideIndex - 1].style.opacity = "1"; 
+  setTimeout(showSlides, 3000);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  slides[0].classList.add("show");
+  showSlides();
+});
