@@ -39,21 +39,21 @@
 
 window.initMap = initMap;
 
-let slideIndex = 0;
-const slides = document.querySelectorAll(".slide");
-
-function showSlides() {
-  slides.forEach((slide, i) => {
-    slide.style.opacity = "0"; // Hide all slides
-  });
-
-  slideIndex++;
-  if (slideIndex > slides.length) slideIndex = 1;
-  slides[slideIndex - 1].style.opacity = "1"; 
-  setTimeout(showSlides, 3000);
-}
-
 document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".slide");
+  let slideIndex = 0;
+  
+  function showSlides() {
+    slides.forEach((slide) => {
+      slide.classList.remove("show");
+    });
+
+    slideIndex++;
+    if (slideIndex > slides.length) slideIndex = 1;
+    slides[slideIndex - 1].classList.add("show");
+    setTimeout(showSlides, 3000);
+  }
+
   slides[0].classList.add("show");
   showSlides();
 });
