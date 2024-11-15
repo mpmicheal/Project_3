@@ -11,12 +11,20 @@
 });
 
   var infoWindow = new google.maps.InfoWindow({
-    content: "<h2>New York City</h2><p>This is Midtown Manhattan the city that doesn't sleep</p>",
+    content: "<h2>New York City</h2><p>This is Midtown Manhattan, the city that doesn't sleep</p>",
   });
 
   marker.addListener("click", function () {
     infoWindow.open(map, marker);
   });
+
+  map.setOptions({
+  mapTypeControl: true,
+  mapTypeControlOptions: {
+    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+    position: google.maps.ControlPosition.TOP_RIGHT
+  }
+});
     
 
 }
