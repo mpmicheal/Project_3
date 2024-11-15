@@ -6,6 +6,7 @@
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
       position: google.maps.ControlPosition.TOP_LEFT,
+      mapTypeIds: ['roadmap' , 'satellite']
     },
   });
 
