@@ -1,3 +1,18 @@
+#wrapper {
+  width: 850px;
+  height: 600px;
+  bacground-color: #c00;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+#canvas {
+  width:700px;
+  height: 500px;
+  background-color: #ccc;
+  margin: 30px auto;
+}
+
 @media screen and (min-width: 21.5625em) {
   header {
     padding: 1.5rem;
