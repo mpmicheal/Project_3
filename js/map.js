@@ -1,7 +1,12 @@
   function initMap(){
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 40.754932, lng: -73.984016 },
-    zoom: 8
+    zoom: 8,
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      position: google.maps.ControlPosition.TOP_LEFT,
+    },
   });
 
   var marker = new google.maps.Marker({
@@ -16,14 +21,6 @@
 
   marker.addListener("click", function () {
     infoWindow.open(map, marker);
-  });
-
-  map.setOptions({
-    mapTypeControl: true,
-    mapTypeControlOptions: {
-    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-    position: google.maps.ControlPosition.TOP_RIGHT,
-  },
   });
 
   var cityCircle = new google.maps.Circle({
