@@ -9,26 +9,7 @@
   map: map,
   title: 'Your Location'
 });
-
-  const contentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">New York City</h1>' +
-    '<div id="bodyContent">' +
-    "<p><b>Manhattan New York</b>, As they say the City never sleeps</b>, is a large "
-    "(last visited June 22, 2009).</p>" +
-    "</div>" +
-    "</div>";
-
-  var infoWindow = new google.maps.InfoWindow({
-    content: contentString,
-  });
     
-  marker.addListener("click", function () {
-    infoWindow.open(map, marker);
-  });
-}
 
 }
 
