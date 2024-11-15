@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slideIndex++;
     if (slideIndex > slides.length) slideIndex = 1;
     slides[slideIndex - 1].classList.add("show");
-    setTimeout(showSlides, 3000);
+    setTimeout(showSlides, 2000);
   }
 
   slides[0].classList.add("show");
