@@ -9,6 +9,14 @@
   map: map,
   title: 'Your Location'
 });
+
+  var infoWindow = new google.maps.InfoWindow({
+    content: "New York City",
+  });
+
+  marker.addListener("click", function () {
+    infoWindow.open(map, marker);
+  });
     
 
 }
