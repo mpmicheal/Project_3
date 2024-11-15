@@ -11,7 +11,7 @@
 });
 
   var infoWindow = new google.maps.InfoWindow({
-    content: "New York City",
+    content: "<h2>New York City</h2><p>This is Midtown Manhattan the city that doesn't sleep</p>",
   });
 
   marker.addListener("click", function () {
